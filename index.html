@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Autocomplete search bar</title>
+    <!-- font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    />
+    <!-- here i defined our css link which is index.css -->
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="contain">
+      <div class="wrapper">
+        <input
+          type="text"
+          class="search borderBottom"
+          name="search"
+          placeholder="  Type to Search..."
+        />
+        <!-- in this div i define Search Icon with the help of font Awesome -->
+        <div class="icon"><i class="far fa-search"></i></div>
+        <!-- in this div i Store dynamic html tags and data  -->
+        <div class="result hidden"></div>
+      </div>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
